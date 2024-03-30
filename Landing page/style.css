@@ -1,0 +1,168 @@
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+} */
+
+#header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav>ul{
+    width:35vw;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 2rem;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+.logo > img{
+    max-width: 300px;
+}
+
+.forum{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 4rem auto 0;
+}
+
+.grid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desc-1{
+    margin-left: 15rem;
+}
+
+.desc-2{
+    margin-left: 15rem;
+}
+
+.How-it-works{
+    margin-top:4rem;  
+}
+
+#Pricing{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    border: 2px solid black;
+    width:calc(100% / 3);
+    margin:10px;
+}
+
+.product > .level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.product > h2 {
+    margin-top: 15px;
+}
+
+.product > ol {
+    margin: 15px 0;
+}
+
+.product > ol > li {
+    padding: 5px 0;
+}
+
+.product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+}
+
+footer{
+    margin-top:4rem;
+    margin-bottom: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: #DDDDDD;
+}
+
+footer > ul{
+    display: flex;
+    gap:1rem;
+}
+
+#how-it-works{
+    width: 40vw;
+}
+
+ /* Adding media querie for iphone 12 */
+@media only screen and (device-width: 390px) and (device-height: 844px) and (orientation: portrait) {
+    *{
+        font-size: 10px;
+    }
+    .logo > img{
+        max-width: 200px;
+    }
+
+    .desc{
+        margin-left: 15rem;
+    }
+
+    #how-it-works{
+        width: 70vw;
+    }
+
+
+    .product > h2 {
+        margin-top: 0;
+    }
+    
+    .product > ol {
+        padding-left: 0.5rem;
+        margin-right: 0;
+        align-items: center;
+    }
+    
+    .product > ol > li {
+        padding: 0;
+    }
+} 
+

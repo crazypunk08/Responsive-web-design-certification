@@ -1,0 +1,44 @@
+body{
+    font-size: 0.96rem;
+}
+#navbar{
+    position: fixed;
+    max-width:240px;
+    height: 100%;
+    overflow: auto;
+}
+
+
+#main-doc{
+    position: absolute;
+    margin-left: 240px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+#navbar li{
+    list-style: none;
+}
+
+#navbar ul{
+    padding: 0;
+}
+
+#navbar a{
+    display: block;
+    padding: 10px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* now adding media queries to our page */
+@media screen and (min-width:390px){
+    #navbar{
+        /* display:none; */
+    }
+
+    body{
+        font-size: 0.96rem;
+    }
+}
